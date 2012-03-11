@@ -1,5 +1,5 @@
 from pylab import *
-from pyhalo import Cosmology, power_spectrum, transfer, ps_to_xi
+from pyhalo import Cosmology, power_spectrum, ps_to_xi
 from scipy import pi,sin
 from time import sleep
 
@@ -16,14 +16,15 @@ loglog(r,xi,k,ps)
 xlim(1e-2,1e2)
 ylim(1e-4,1e2)
 
-#fname = '/Users/berian/Research/Tools/cmbfast/berian/lcdm_berian.dat'
-#data = load(fname)
-#kd = data[:,0]
-#P = data[:,1]
-#P = P / max(P)
-#Td = interp(kd,k,T)
-#semilogx(kd,Td/P)
-#axis([0.001,1,0.95,1.05])
+# Plot comparison with LambdaCDM cosmology
+fname = 'ps_lin_0.3.dat'
+data = load(fname)
+kd = data[:,0]
+P = data[:,1]
+P = P / max(P)
+Td = interp(kd,k,T)
+xsemilogx(kd,Td/P)
+axis([0.001,1,0.95,1.05])
 
     
 
