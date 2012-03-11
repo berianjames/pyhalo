@@ -17,6 +17,6 @@ This is a Python implementation of the halokit_ library. This code implements th
 
 It is plausible that further work on this code will be performed in the future; a fork by Henrik Brink (brinkar) that extends the code considerably already exists and may be posted separately.
 
-:: _halokit: https://github.com/berianjames/matlab-science-functions
+.. _halokit: https://github.com/berianjames/matlab-science-functions
 
-:: _cosmolopy: http://roban.github.com/CosmoloPy/
+.. _cosmolopy: http://roban.github.com/CosmoloPy/
